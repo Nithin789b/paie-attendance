@@ -17,7 +17,6 @@ import AttendanceControl from './pages/AttendanceControl';
 function App() {
   return (
     <AuthProvider>
-      <Router>
         <div className="App">
           <Routes>
             <Route path="/login" element={<Navigate to="/login-superadmin" replace />} />
@@ -96,7 +95,6 @@ function App() {
             theme="light"
           />
         </div>
-      </Router>
     </AuthProvider>
   );
 }
